@@ -24,7 +24,7 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 120px 15px 0;
+  padding: 90px 15px 0;
 }
 .container .text-muted {
   margin: 20px 0;
@@ -54,11 +54,112 @@ font-size: .85em;}
 .profile-photo{ width: 40%; float: left;}
 .profile-main-details {width: 60%; float: left}
 .container>.navbar-header, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus  {   background-color: #1a1919; }
-.container>.navbar-header { height: 80px; background-image: url(../img/ogo.png); background-repeat: no-repeat;background-position: center; width: 100%;}
+.container>.navbar-header { height: 80px; background-image: url(../img/logo.png); background-repeat: no-repeat;background-position: center; width: 100%;}
 .navbar-default {  background-color: #1a1919;}
 
 .profile-photo img { width: 100%; height: 100%; }
 
 .page-header2 { 1px solid #ffffff; pading-top: 110px;}
 
+#blah select { color: #1a1919; }
+label { color: #1a1919;; font-size: 1.5em }
 
+#blah label{ font-size: 1.4em;
+font-weight: 600;
+color: #1a1919;
+float: left;}
+label { padding-right: 10px;}
+
+#form-right { float: right; width: 60%;}
+div input  {}
+
+#blah { padding-bottom: 10px;}
+
+.button {
+   border-top: 1px solid #4e918b;
+   background: #77d9d2;
+   background: -webkit-gradient(linear, left top, left bottom, from(#5cb0a9), to(#77d9d2));
+   background: -webkit-linear-gradient(top, #5cb0a9, #77d9d2);
+   background: -moz-linear-gradient(top, #5cb0a9, #77d9d2);
+   background: -ms-linear-gradient(top, #5cb0a9, #77d9d2);
+   background: -o-linear-gradient(top, #5cb0a9, #77d9d2);
+   padding: 6.5px 13px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 14px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #2d7d78;
+   background: #2d7d78;
+   color: #ccc;
+   }
+.button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+   
+   /* #Forms
+================================================== */
+
+	form {
+		 }
+	fieldset {
+		margin-bottom: 20px; }
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	textarea,
+	select {
+		border: 1px solid #ccc;
+		padding: 6px 4px;
+		outline: none;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		font: 13px "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: #777;
+		margin: 0;
+		width: 210px;
+		max-width: 100%;
+		display: block;
+		margin-bottom: 10px;
+		background: #fff; }
+	select {
+		padding: 0; }
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="email"]:focus,
+	textarea:focus {
+		border: 1px solid #aaa;
+		background-color: #cef7f5;
+		border-radius: 5px;
+ 		color: #444;
+ 		-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+		box-shadow:  0 0 3px rgba(0,0,0,.2); }
+	textarea {
+		min-height: 60px; }
+	label,
+	legend {
+		display: block;
+		font-weight: bold;
+		font-size: 13px;  }
+	select {
+		width: 220px; }
+	input[type="checkbox"] {
+		display: inline; }
+	label span,
+	legend span {
+		font-weight: normal;
+		font-size: 13px;
+		color: #444; }
+   
