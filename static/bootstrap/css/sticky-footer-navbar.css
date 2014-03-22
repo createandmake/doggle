@@ -24,7 +24,7 @@ body {
 /* Not required for template or sticky footer method. */
 
 body > .container {
-  padding: 60px 15px 0;
+  padding: 120px 15px 0;
 }
 .container .text-muted {
   margin: 20px 0;
@@ -45,12 +45,19 @@ code {
 
 .pageheader h1 { float: right;}
 
-.menu-item { width: 25%; float: left; border: 1px solid #ccc; height: 60px; text-align: center;
+.menu-item1,.menu-item2,.menu-item3,.menu-item4  { width: 25%; float: left; border: 1px solid #ccc; height: 60px; text-align: center;
 color: #ffffff;
 padding: 5px;
 font-size: .85em;}
 .logoTop { height: 30px; width: 100%; text align: center; background-color: #ffffff;}
-.profile-photo{ width: 30%; float: left;}
-.profile-main-details {width: 70%; float: left}
+.profile-photo{ width: 40%; float: left;}
+.profile-main-details {width: 60%; float: left}
 .container>.navbar-header, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus  {   background-color: #1a1919; }
-.container>.navbar-header { height: 80px;}
+.container>.navbar-header { height: 80px; background-image: url(../img/60x60Logo.png); background-repeat: no-repeat;background-position: center; width: 100%;}
+.navbar-default {  background-color: #1a1919;}
+
+img { width: 100%; height: 100%; }
+
+.page-header2 { 1px solid #ffffff; pading-top: 110px;}
+
+
