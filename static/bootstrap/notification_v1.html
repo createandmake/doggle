@@ -73,9 +73,9 @@
        <div class="profile-main-details"><h1>News Feed</h1></div> 
       </div>
         <br><br><br><br>
-	</div class="feed"></div>
+	<div id="main-feed" class="feed">
 	
-      
+</div>
 </div>
 
 
@@ -109,7 +109,7 @@ console.log(notes.notes[0].message);
 
 var html = ""
 for (var i = 0; i < notes.notes.length; i++) {
-	var html_element = '<div id="'+"note"+i+
+	 html+= '<div id="'+"note"+i+
 		'" class="alert alert-info">'+
 		'<div class="image-display"><img src="'+notes.notes[i].image+'"/>'+
 		'<p></p>'+
@@ -124,13 +124,11 @@ for (var i = 0; i < notes.notes.length; i++) {
 		'</div>'+
 	      '</div>'+
 	      '<div class="message-display">'+notes.notes[i].message+'</div>'+
-	     '</div>'
-
-	//$("#note1 .message-display").append("testing").append(html);
-	console.log(html_element);
+	     '</div>';
 
 }
 console.log(html);
+$("#main-feed").append(html);
 
 //$("#note1 .message-display").append("testing").append(html);
     
