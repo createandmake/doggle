@@ -100,8 +100,10 @@ $( document ).ready(function() {
     console.log( "ready!" );
     
     var notes = {"notes":[
-  {"message":"woof","image":"img/dog_1.jpg"},
-  {"message":"woof woof","image":"img/dog_2.jpg"}]};
+  {"message":"9:40 AM Snoopy's Birthday, 4 today!","image":"img/Snoopybday.jpg"},
+  {"message":"9:00 AM You've got 10 new pals!","image":"img/5inarow.jpg"},
+  {"message":"8:30 AM Pedigree's new offer on nibbles. $5 off!","image":"img/Pedigree.jpg"},
+  ]};
 
 console.log(notes.notes[0].message);
 
@@ -109,7 +111,7 @@ var html = ""
 for (var i = 0; i < notes.notes.length; i++) {
    html+= '<div id="'+"note"+i+
     '" class="alert alert-info">'+
-    '<div class="image-display"><img src="'+notes.notes[i].image+'"/>'+
+    '<div class="image-display"><img width="80%" src="'+notes.notes[i].image+'"/>'+
         '</div>'+
         '<div class="message-display">'+notes.notes[i].message+'</div>'+
        '</div>';
