@@ -162,4 +162,6 @@ div input  {}
 		font-weight: normal;
 		font-size: 13px;
 		color: #444; }
+		
+#footer div a { text-decoration: none; color: #ffffff;}
    
