@@ -14,7 +14,7 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #000000;
+  background-color: #1a1919;
   
 }
 
@@ -52,3 +52,5 @@ font-size: .85em;}
 .logoTop { height: 30px; width: 100%; text align: center; background-color: #ffffff;}
 .profile-photo{ width: 30%; float: left;}
 .profile-main-details {width: 70%; float: left}
+.container>.navbar-header, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus  {   background-color: #1a1919; }
+.container>.navbar-header { height: 80px;}
