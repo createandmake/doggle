@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.ico"> -->
 
-    <title>Doggle Woofwall</title>
+    <title>Sticky Footer Navbar Template for Bootstrap</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,9 +42,11 @@
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
+            <li><a href="#about">WOOF</a></li>
+            <li><a href="#contact">MAP</a></li>
+              <li><a href="#contact">ADDRESS</a></li>
+                <li><a href="#contact">PROFILE</a></li>
+           <!-- <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
               <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
@@ -53,7 +55,7 @@
                 <li class="divider"></li>
                 <li class="dropdown-header">Nav header</li>
                 <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
+                <li><a href="#">One more separated link</a></li>-->
               </ul>
             </li>
           </ul>
@@ -62,36 +64,36 @@
      </div>
     </div> 
 
-      <!-- Begin page content -->
+<!-- Begin page content -->
     <div class="container">
-      <div class="page-header">
+      <div class="page-header2">
      <div class="profile-photo">
-     
+     <img src="img/snoopy.png" width="300" height="225" />
      </div> 
-       <div class="profile-main-details"><h1>News Feed</h1><p> Status:how are you feeling?.</p></div> 
+       <div class="profile-main-details"><h1>Snoopy's Profile</h1></div> 
       </div>
-        <br><br><br><br>
-  <div id="main-feed" class="feed">
-  
-</div>
-</div>
+      <p class="lead"><b>DOB: </b>4 October, 1950</p>
+      <p class="lead"><b>Breed: </b>Beagle</p>
+      <p class="lead"><b>Gender: </b>Male</p>
+      <br>
+      <p class="lead"><b>Status: </b>Snoopy is feeling happy and wants to make friends.</p>
+      <p class="lead"><b>Hobbies: </b></p>
+        <ul>
+        <li>Long walks on the beach</li>
+        <li>Sunbaking on top of my dog house</li>
+        <li>Adventures with Charlie Brown</li>
+        <li>Sniffing foreign objects</li>
+        </ul>
 
 
     </div>
-  <br />
-         <br />
+
     <div id="footer">
       <div class="container">
-       <div id="footer">
-      <div class="container">
-      <div class="menu-item1"><a href="woofwall.html">WOOF<img src="img/woof.png" width="80" height="80" /></a></div>
-       <div class="menu-item2"><a href="map.html">MAP<img src="img/hood.png" width="80" height="80" /></a></div>
-        <div class="menu-item3"><a href="#">ADDRESS<img src="img/dawgz.png" width="80" height="80"/></a></div>
-         <div class="menu-item4"><a href="profile.html">PROFILE<img src="img/profile.png" width="80" height="80" /></a></div>
-       
-        <!-- <p class="text-muted">Place sticky footer content here.</p> -->
-      </div>
-    </div>
+      <div class="menu-item1">WOOF<img src="img/woof.png" width="80" height="80" /></div>
+       <div class="menu-item2">MAP<img src="img/hood.png" width="80" height="80" /></div>
+        <div class="menu-item3">ADDRESS<img src="img/dawgz.png" width="80" height="80"/></div>
+         <div class="menu-item4">PROFILE<img src="img/profile.png" width="80" height="80" /></div>
         <!-- <p class="text-muted">Place sticky footer content here.</p> -->
       </div>
     </div>
@@ -102,37 +104,5 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  <script>
-$( document ).ready(function() {
-    console.log( "ready!" );
-    
-  var notes = {"notes":[
-  {"message":"9:40 AM <a href='snoopy.html'>Snoopy's Birthday</a>, 4 today!","image":"img/Snoopybday.jpg"},
-  {"message":"9:00 AM You've got 10 new pals!","image":"img/5inarow.jpg"},
-  {"message":"8:30 AM Pedigree's new offer on nibbles. $5 off!","image":"img/Pedigree.jpg"},
-  ]};
-
-console.log(notes.notes[0].message);
-
-var html = ""
-for (var i = 0; i < notes.notes.length; i++) {
-   html+= '<div id="'+"note"+i+
-    '" class="alert alert-info">'+
-    '<div class="image-display"><img width="80%" src="'+notes.notes[i].image+'"/>'+
-        '</div>'+
-        '<div class="message-display">'+notes.notes[i].message+'</div>'+
-       '</div>';
-
-}
-console.log(html);
-$("#main-feed").append(html);
-
-//$("#note1 .message-display").append("testing").append(html);
-    
-    
-
-});
- 
- </script>
   </body>
 </html>

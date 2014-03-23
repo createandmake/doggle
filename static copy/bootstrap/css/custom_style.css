@@ -1,0 +1,8 @@
+.image-display {
+	display:inline-block;
+}
+.message-display{
+	display:inline-block; 
+	vertical-align:top;
+}
+
