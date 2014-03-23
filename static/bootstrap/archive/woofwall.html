@@ -16,7 +16,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
-    <link href="css/custom_style.css" rel="stylesheet">
+
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -24,23 +24,20 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-
   </head>
 
   <body>
 <div class="logoTop"></div>
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container"> 
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Profile</a>
+          </button>  
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -61,10 +58,11 @@
             </li>
           </ul>
         </div><!--/.nav-collapse -->
-      </div>
-    </div>
+       
+     </div>
+    </div> 
 
-    <!-- Begin page content -->
+      <!-- Begin page content -->
     <div class="container">
       <div class="page-header">
      <div class="profile-photo">
@@ -73,27 +71,10 @@
        <div class="profile-main-details"><h1>News Feed</h1></div> 
       </div>
         <br><br><br><br>
-	<div id="note1" class="alert alert-info">
-		<div class="image-display"><img src="img/dog_1.jpg"/>
-		<p></p>
-		<div class="btn-group">
-		  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-		    Friend <span class="caret"></span>
-		  </button>
-		  <ul class="dropdown-menu" role="menu">
-		    <li><a href="#">Doggy Friend</a></li>
-		    <li><a href="#">Ignore</a></li>
-		  </ul>
-		</div>
-
-	      </div>
-	      <div class="message-display"></div>
-
+  <div id="main-feed" class="feed">
+  
 </div>
-
-<div class="alert alert-info">This is a notification 2</div>
-      
-<p id="test"></p>
+</div>
 
 
     </div>
@@ -119,43 +100,29 @@ $( document ).ready(function() {
     console.log( "ready!" );
     
     var notes = {"notes":[
-	{"message":"woof"},
-	{"message":"woof woof"}]};
+  {"message":"9:40 AM Snoopy's Birthday, 4 today!","image":"img/Snoopybday.jpg"},
+  {"message":"9:00 AM You've got 10 new pals!","image":"img/5inarow.jpg"},
+  {"message":"8:30 AM Pedigree's new offer on nibbles. $5 off!","image":"img/Pedigree.jpg"},
+  ]};
 
 console.log(notes.notes[0].message);
 
 var html = ""
 for (var i = 0; i < notes.notes.length; i++) {
-	 html += "<strong>"+notes.notes[i].message+"</strong>";
+   html+= '<div id="'+"note"+i+
+    '" class="alert alert-info">'+
+    '<div class="image-display"><img width="80%" src="'+notes.notes[i].image+'"/>'+
+        '</div>'+
+        '<div class="message-display">'+notes.notes[i].message+'</div>'+
+       '</div>';
 
 }
 console.log(html);
+$("#main-feed").append(html);
 
-$("#note1 .message-display").append("testing").append(html);
+//$("#note1 .message-display").append("testing").append(html);
     
     
-<div id="note1" class="alert alert-info">
-		<div class="image-display"><img src="img/dog_1.jpg"/>
-		<p></p>
-		<div class="btn-group">
-		  <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
-		    Friend <span class="caret"></span>
-		  </button>
-		  <ul class="dropdown-menu" role="menu">
-		    <li><a href="#">Doggy Friend</a></li>
-		    <li><a href="#">Ignore</a></li>
-		  </ul>
-		</div>
-
-	      </div>
-	      <div class="message-display"></div>
-
-</div>
- //for (var i = 0; i < notes.length; i++) {
- //   var user = external_data[i];
-  //  var pos = new google.maps.LatLng(user.lat, user.lng)
-    //var marker = new RichMarker({position:pos ,content: '<img src="' + user.url + '" title="' + user.username + '" class="my-map-marker" />'});
-
 
 });
  
